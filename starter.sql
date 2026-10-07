@@ -1,10 +1,13 @@
 SET SERVEROUTPUT ON;
 
+DECLARE
+    a NUMBER := 10;
+    b NUMBER := 5;
 BEGIN
-    IF 10 > 5 THEN
-        DBMS_OUTPUT.PUT_LINE('10 is greater than 5');
+    IF a > b THEN
+        DBMS_OUTPUT.PUT_LINE('A is greater than B');
     ELSE
-        DBMS_OUTPUT.PUT_LINE('10 is not greater than 5');
+        DBMS_OUTPUT.PUT_LINE('A is less than or equal to B');
     END IF;
 END;
 /
